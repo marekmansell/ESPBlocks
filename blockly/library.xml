@@ -1,0 +1,766 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="VMvP[PXRS0QtlG^3(pI=" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">sleep</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="i@7!z*$NuN.9}4sAkN49">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="vlQS18T?q5~|@^~1q_{^">
+            <field name="TEXT">Počkaj</field>
+            <next>
+              <block type="field_number" id="T6{?4V]mM2@L)lm!rIyb">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">sleep_time</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="q0A/s-k{F[@:5|o3@ts$">
+                    <field name="TEXT">sekúnd</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="vXDc37f9XK,M}:oXL6FF" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="OV0U=)M%g~Uh2u;7.sWi" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="Tr:Bk5mZ1XqyyjISl6br"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="Q*}W.lG$SJ5zyG?GbTD."></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Kn%@7@LQ`f]$boXm!7Bg">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="lpTrUMh-1mLQY5:7z*Iv" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">switch_led</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id=".,)B{-rH*vDO~m*L;jir">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_dropdown" id="DV|xPSim90W4Ct#oTapq">
+            <mutation options="[&quot;text&quot;,&quot;text&quot;]"></mutation>
+            <field name="FIELDNAME">drop</field>
+            <field name="USER0">Zapni</field>
+            <field name="CPU0">1</field>
+            <field name="USER1">Vypni</field>
+            <field name="CPU1">0</field>
+            <next>
+              <block type="field_static" id="(gG64|G/8kO4G[d.yK7R">
+                <field name="TEXT">LEDku na Pine</field>
+                <next>
+                  <block type="field_number" id="=yl`13,mQ+6$Rbi$1TF#">
+                    <field name="VALUE">0</field>
+                    <field name="FIELDNAME">pin_number</field>
+                    <field name="MIN">0</field>
+                    <field name="MAX">16</field>
+                    <field name="PRECISION">0</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="$gyJB1Ir;C-5W_~EPwx]" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="e`{Oo%7#;=28;O!Ls.OU" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id=")B{`Y~tx:g@WG#9ptP`~"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",|/X%21m$*w6gR:aWgqz"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="63m1qqY$gI}3*Np29E}:">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="p_}-sfU3(~T~X3A7Zrv1" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">sleep_ms</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="AC9c*jJa`ElHIcOua)ht">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="h$uc(|pF2-n.YD36?8@r">
+            <field name="TEXT">Počkaj</field>
+            <next>
+              <block type="field_number" id="Su1AN;n5_)?DPh3@W;6N">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">time_value</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="3=vN*KF-1/|`3u_KSt3m">
+                    <field name="TEXT">milisekúnd</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="4Fqs,2RRN4R4;p]cgD;~" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="[llXK41g|(@21w(_sQQg" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="e%BZ@1e(-va!%z,myiT*"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="{]h77WPl]-W^8nOStoUS"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="t_{uW$!zA(s5/]yqEsTV">
+        <mutation colour="#a55b6d"></mutation>
+        <field name="HUE">345</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="}]y,;;,oTzo_}5K{Zaje" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">button_input</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="N*QG[Uq@O_ct6TV~@1=N">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!lj4Ma-Az.hRz9w3]*n^">
+            <field name="TEXT">je tlačidlo na Pine</field>
+            <next>
+              <block type="field_number" id="G},1LgSJ@4}V7jKOgEC{">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin_number</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_dropdown" id="Zhmju}~Mk@8}#wxJS{yg">
+                    <mutation options="[&quot;text&quot;,&quot;text&quot;]"></mutation>
+                    <field name="FIELDNAME">NAME</field>
+                    <field name="USER0">stlačené</field>
+                    <field name="CPU0">1</field>
+                    <field name="USER1">nestlačené</field>
+                    <field name="CPU1">0</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="-b^_K5F|.S$=%-Nb(6K~" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V}(P1lUivX7EHW)Ki:+@" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="GhzkTasCay)+:9D7PMt`"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="E$}e0nTr:ds(XxmZ^gjw">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,W6v=:xvp_^OLj*bAPA" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">neopixel_declare</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="_HiHz0(%z19@3g)+nr6(">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="MfhN8FkRW#kL?^ge;ol!">
+            <field name="TEXT">Pripoj NeoPixel pásik na Pin číslo</field>
+            <next>
+              <block type="field_number" id="XQ(j?_l!Lbly?P=ILoV*">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin_num</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="g$s-GA?j!Gi^_1GxH7/S">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="d@ox7T-Jw$(vL}BCwj-1">
+                <field name="TEXT">s dĺžkou</field>
+                <next>
+                  <block type="field_number" id="^zzO$@cpZ7Hq3q:M0iw6">
+                    <field name="VALUE">8</field>
+                    <field name="FIELDNAME">pixels</field>
+                    <field name="MIN">0</field>
+                    <field name="MAX">Infinity</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="-5$KyHZeJ(Yj8Od|^Nhx">
+                        <field name="TEXT">pixelov</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="B[+=chHTSZXn?hhgw^aH" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="VEg1}AdIYP=7AO7qqUK$" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="=aW}8bS1yYg[$3Df~;;B"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="?xGN,kr=^o,|dh*,~vQU"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="VXq-nxo+0tr{mJ*=*J8x">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="16YZzF^yO3:::O[hEp71" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">neopixel_set_pixel</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="+Lu~TMTf@.C?nJ6cnc0.">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="##H8k,B$fkL-#uHBz}DL">
+            <field name="TEXT">Zmeň Pixel číslo</field>
+            <next>
+              <block type="field_number" id="BzzAyseIjZ2Rrmixl$/U">
+                <field name="VALUE">1</field>
+                <field name="FIELDNAME">pixel_number</field>
+                <field name="MIN">1</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id=",Uxmh|6`_;AB6z?I;XU?">
+                    <field name="TEXT">na</field>
+                    <next>
+                      <block type="field_colour" id="TE|QZ#/8WW5`ETwKTo)8">
+                        <field name="COLOUR">#ff0000</field>
+                        <field name="FIELDNAME">colour</field>
+                        <next>
+                          <block type="field_static" id="[k)lMBglr]C2$7(I9yU:">
+                            <field name="TEXT">farbu</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="]sP|u3}+F1YxyU}Z%U#v" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="dpZ6kD#~rE-(q{EfQ7}G" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="R5d./g]YpLq0{mOfq_eC"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="g@-vxclMWE})0:H`W~a_"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="YD:-Oxo*?]oF|Dx.-B3r">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="`Vx2I3(Xb]JxAn,VXS3t" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">neopixel_set_all</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Y:z-+|6PbdNt{n(cp_mL">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=".9VQW8B_-BY+P@:5wA(,">
+            <field name="TEXT">Zmeň všetky Pixely na</field>
+            <next>
+              <block type="field_colour" id="kg!0mo_[Z*xk/Af#@%Ux">
+                <field name="COLOUR">#ff0000</field>
+                <field name="FIELDNAME">colour</field>
+                <next>
+                  <block type="field_static" id=",Lt[_+Dhtm~?qe_$Jt5:">
+                    <field name="TEXT">farbu</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="L|8:)AF!X5l,q{1m82(0" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="IJgl-!CKTyC$L!P(=s,p" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="z#Z{)Ob94,y}_@|s(Tq4"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="J,7V~c!o6ua0c=Io~`:^"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="oO5I/:H%h*%a?Nj),x$q">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="-9yKjiNRf2W:W~7Z9YJC" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">neopixel_animation</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="^kZsQe.f(aut,iEnu_Fc">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="o2#~JaJ;fEA~MtCp,%XT">
+            <field name="TEXT">Prehraj NeoPixel animáciu:</field>
+            <next>
+              <block type="field_dropdown" id="I:v-z78$*94),6+|:gM!">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">NAME</field>
+                <field name="USER0">Prelet</field>
+                <field name="CPU0">0</field>
+                <field name="USER1">Výstraha</field>
+                <field name="CPU1">1</field>
+                <field name="USER2">Odskakovanie</field>
+                <field name="CPU2">2</field>
+                <field name="USER3">Spiatočný prelet</field>
+                <field name="CPU3">3</field>
+                <field name="USER4">Whatever</field>
+                <field name="CPU4">4</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="+t#1N)1J?x.n84fWSG6[" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="5D38C[9zkK.hl~+^mP+0" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K:Bc~7yrhH_w/rTl;aT@"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="xn6tt+2{V8}C!Ir}UJ;9"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="@6~?5R?R0:2n3m^[m}T6">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="1]P0Rnlg|qIj(gxb@f8^" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">motor</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="oue!(=X##(y]UI@8SgW%">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="]|vrWs];hJ)-Cn6@|zud">
+            <field name="TEXT">Na Pine číslo</field>
+            <next>
+              <block type="field_number" id="^bT[Kbj0}~[|,2!0wFY-">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">NAME</field>
+                <field name="MIN">-Infinity</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="`Zj/jI/+~IEyxGVWQbYj">
+                    <field name="TEXT">vibruj motorom na</field>
+                    <next>
+                      <block type="field_dropdown" id="]pdp{0[x%LADTEDbL^_u">
+                        <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                        <field name="FIELDNAME">intensity</field>
+                        <field name="USER0">100%</field>
+                        <field name="CPU0">255</field>
+                        <field name="USER1">80%</field>
+                        <field name="CPU1">204</field>
+                        <field name="USER2">60%</field>
+                        <field name="CPU2">153</field>
+                        <field name="USER3">40%</field>
+                        <field name="CPU3">102</field>
+                        <field name="USER4">20%</field>
+                        <field name="CPU4">51</field>
+                        <field name="USER5">0%</field>
+                        <field name="CPU5">0</field>
+                        <next>
+                          <block type="field_static" id="zN}g..`LNyfHtAL,|GWR">
+                            <field name="TEXT">percent</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="L~9iL1l?`,r9_B2wq`In" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="^thHSV1I6Gn3#qNXjI*2" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="EAkS=RTE7T|9}?f8M`Ql"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="4EH~k`.$c@BKb][}=ua~"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="ZCLu4T.P/$^dllaeIqW9">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="tvsejvBK^HT=/V^MCQDL" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">speaker</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="NX(wJT*69{Sk`JfKG?%:">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="AYRwF%;DdEyQlO`3aV@,">
+            <field name="TEXT">Na Pine číslo</field>
+            <next>
+              <block type="field_number" id="Yu,U40bDFaU:rbSkKd?S">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin_number</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="3um.*BIzDWl2If7,Yakn">
+                    <field name="TEXT">bzuč frekvenciou</field>
+                    <next>
+                      <block type="field_dropdown" id="f*np.Qz,I!1;{*oeov{]">
+                        <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                        <field name="FIELDNAME">freq</field>
+                        <field name="USER0">1000</field>
+                        <field name="CPU0">1000</field>
+                        <field name="USER1">900</field>
+                        <field name="CPU1">900</field>
+                        <field name="USER2">800</field>
+                        <field name="CPU2">800</field>
+                        <field name="USER3">700</field>
+                        <field name="CPU3">700</field>
+                        <field name="USER4">600</field>
+                        <field name="CPU4">600</field>
+                        <field name="USER5">500</field>
+                        <field name="CPU5">500</field>
+                        <field name="USER6">400</field>
+                        <field name="CPU6">400</field>
+                        <field name="USER7">300</field>
+                        <field name="CPU7">300</field>
+                        <field name="USER8">200</field>
+                        <field name="CPU8">200</field>
+                        <field name="USER9">100</field>
+                        <field name="CPU9">100</field>
+                        <field name="USER10">0</field>
+                        <field name="CPU10">0</field>
+                        <next>
+                          <block type="field_static" id="+Yf2msM[R`~GuTH8tp$r">
+                            <field name="TEXT">Hz</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="I^_1|dN+Uz5y_%ts)u4P" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="W$eC?gq8`0IIL{Y9+K)I" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="gfn05RL=4^3zT*Y5f|bh"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="uBu[?[B2D]}Zn4C!`{`m"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="9+q16tA@E*fNM9SGsoaw">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="!eg^;w8_Eh?+bi#{*uF+" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">temp_declare</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="2h,^$(D01obDg+!rf6jv">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="m3^75uhpj07%!;$Y_VBK">
+            <field name="TEXT">Pripoj Teplomer na Pin číslo</field>
+            <next>
+              <block type="field_number" id="knG:oEmZzB1}%,$uq-Nx">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin_num</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="O{^13asoEVNo{xT%[5f7" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Xi0!}5e2[Z6v/vO!3Xaf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="H_j.=7pI]`i8iSHft*#W"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="pR|85LV.w-kx[)KYIYq3"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="[wFEPRxyLx93LK4(tZuW">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="KuV{[;Uh*|D9Ut`AZ6fS" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">temp_print</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="N:J;;#Axp*|pi)g5LZd(">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="PBCcmsl3m/D|C/iYcI-;">
+            <field name="TEXT">Odmeraj teplotu na Pine číslo</field>
+            <next>
+              <block type="field_number" id=",cz4fgE*~fCIYxL3mG:R">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">pin_num</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="@_(Sxl$eIC}Z0RMLg`.l" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="}+5gInrz41=AgP3up0tb" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="wa{A8x^GRZf,7~,XI~wc"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=".ei3$y]Hedxvyjb+y#w]">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="2a@E)hkr{0+}viPyM*i{" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">import_machine</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="tUgHF-~+?)!VX_r9NL+9">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="0)z?N;1WZM4v65}3tuVQ">
+            <field name="TEXT">Povoľ Používanie Pinov</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="l)k{=HycfIK4#}[S.2N2" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="`;y-7^1wbOKWVl,YWTQ." deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`kwpwh{,%`FG.qU$*##W"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="R,+R##f$`nd=56@@%cx7"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="5;$fI@e*KbYpt0m(lNsG">
+        <mutation colour="#6d5ba5"></mutation>
+        <field name="HUE">255</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="2a@E)hkr{0+}viPyM*i{" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">import_modules</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="tUgHF-~+?)!VX_r9NL+9">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="0)z?N;1WZM4v65}3tuVQ">
+            <field name="TEXT">Zapni Hardvér</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="l)k{=HycfIK4#}[S.2N2" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="`;y-7^1wbOKWVl,YWTQ." deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`kwpwh{,%`FG.qU$*##W"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="R,+R##f$`nd=56@@%cx7"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="5;$fI@e*KbYpt0m(lNsG">
+        <mutation colour="#6d5ba5"></mutation>
+        <field name="HUE">255</field>
+      </block>
+    </value>
+  </block></xml>
