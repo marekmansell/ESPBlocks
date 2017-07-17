@@ -104,7 +104,7 @@ Blockly.Blocks['neopixel_animation'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Prehraj NeoPixel animáciu:")
-        .appendField(new Blockly.FieldDropdown([["Prelet","0"], ["Výstraha","1"], ["Odskakovanie","2"], ["Spiatočný prelet","3"], ["Whatever","4"]]), "NAME");
+        .appendField(new Blockly.FieldDropdown([["Prelet","prelet"], ["Výstraha","vystraha"], ["Spiatočný prelet","rev_prelet"]]), "NAME");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -165,6 +165,18 @@ Blockly.Blocks['temp_print'] = {
         .appendField(new Blockly.FieldNumber(0, 0), "pin_num");
     this.setOutput(true, null);
     this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.Blocks['import_machine'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Povoľ Používanie Pinov");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(255);
     this.setTooltip('');
     this.setHelpUrl('');
   }

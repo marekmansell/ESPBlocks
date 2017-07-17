@@ -402,18 +402,14 @@
             <field name="TEXT">Prehraj NeoPixel animáciu:</field>
             <next>
               <block type="field_dropdown" id="I:v-z78$*94),6+|:gM!">
-                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
                 <field name="FIELDNAME">NAME</field>
                 <field name="USER0">Prelet</field>
-                <field name="CPU0">0</field>
+                <field name="CPU0">prelet</field>
                 <field name="USER1">Výstraha</field>
-                <field name="CPU1">1</field>
-                <field name="USER2">Odskakovanie</field>
-                <field name="CPU2">2</field>
-                <field name="USER3">Spiatočný prelet</field>
-                <field name="CPU3">3</field>
-                <field name="USER4">Whatever</field>
-                <field name="CPU4">4</field>
+                <field name="CPU1">vystraha</field>
+                <field name="USER2">Spiatočný prelet</field>
+                <field name="CPU2">rev_prelet</field>
               </block>
             </next>
           </block>
