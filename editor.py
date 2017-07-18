@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import tkinter as tk
 from tkinter import ttk
 import serial # requires installing
@@ -15,8 +17,7 @@ import sys
 from pygments import lex
 from pygments.lexers import PythonLexer
 
-import blockly_window
-
+from blockly_window import BlocklyThread
 
 # tkinter on scrollbar instead of loo 60ms!!!
 # every single fucking tab!!!!
@@ -283,7 +284,7 @@ class Editor(tk.Frame):
         SerialSetupWindow(self, self.connect)
 
     def blockly(self):
-        blockly_window.BlocklyThread(self.blockly_run)
+        BlocklyThread(self.blockly_run)
 
     def blockly_run(self, code):
         print("=== Blockly Code: ===\n{}\n=== END ===".format(code))

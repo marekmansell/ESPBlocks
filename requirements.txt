@@ -1,0 +1,6 @@
+olefile==0.44
+Pillow==4.2.1
+Pygments==2.2.0
+PyQt5==5.9
+pyserial==3.3
+sip==4.19.3
