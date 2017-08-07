@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import tkinter as tk
 from tkinter import ttk
 import serial # requires installing
@@ -17,7 +15,8 @@ import sys
 from pygments import lex
 from pygments.lexers import PythonLexer
 
-from blockly_window import BlocklyThread
+import blockly_window
+
 
 # tkinter on scrollbar instead of loo 60ms!!!
 # every single fucking tab!!!!
@@ -25,6 +24,12 @@ from blockly_window import BlocklyThread
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-10s) %(message)s',
                     )
+
+def resource_path(relative):
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative)
+    return os.path.join(relative)
+
 
 def center_window(window):
     window.update_idletasks()
@@ -223,12 +228,11 @@ class Editor(tk.Frame):
         self.setup_device()
 
     def tab_close_style(self): # for tab closing
-        imgdir = os.path.join(os.path.dirname(__file__), 'img')
-        self.i1 = tk.PhotoImage("img_close", file=os.path.join(imgdir, 'close.gif'))
+        self.i1 = tk.PhotoImage("img_close", file=resource_path(os.path.join("img", "close.gif")))
         self.i2 = tk.PhotoImage("img_closeactive",
-            file=os.path.join(imgdir, 'close_active.gif'))
+            file=resource_path(os.path.join("img", "close_active.gif")))
         self.i3 = tk.PhotoImage("img_closepressed",
-            file=os.path.join(imgdir, 'close_pressed.gif'))
+            file=resource_path(os.path.join("img", "close_pressed.gif")))
 
         style = ttk.Style()
 
@@ -284,7 +288,7 @@ class Editor(tk.Frame):
         SerialSetupWindow(self, self.connect)
 
     def blockly(self):
-        BlocklyThread(self.blockly_run)
+        blockly_window.BlocklyThread(self.blockly_run)
 
     def blockly_run(self, code):
         print("=== Blockly Code: ===\n{}\n=== END ===".format(code))
@@ -471,17 +475,17 @@ class Toolbar(tk.Frame):
         self.buttons = {}
         self.labels = {}
 
-        self._add_button("new", "New", "img/new.png")
-        self._add_button("load_file", "Load", "img/load_file.png")
-        self._add_button("save_file", "Save", "img/save.png")
+        self._add_button("new", "New", resource_path(os.path.join("img", "new.png")))
+        self._add_button("load_file", "Load", resource_path(os.path.join("img", "load_file.png")))
+        self._add_button("save_file", "Save", resource_path(os.path.join("img", "save.png")))
         self._add_separator("separator_1")
         self._add_separator("separator_2")
-        self._add_button("run", "Run", "img/run.png")
-        self._add_button("repl", "REPL", "img/repl.png")
-        self._add_button("files", "Storage", "img/files.png")
-        self._add_button("device", "Connect", "img/device_alert.png")
-        self._load_image("img/device.png")
-        self._add_button("blockly", "Blockly", "img/blockly.png")
+        self._add_button("run", "Run", resource_path(os.path.join("img", "run.png")))
+        self._add_button("repl", "REPL", resource_path(os.path.join("img", "repl.png")))
+        self._add_button("files", "Storage", resource_path(os.path.join("img", "files.png")))
+        self._add_button("device", "Connect", resource_path(os.path.join("img", "device_alert.png")))
+        self._load_image(resource_path(os.path.join("img", "device.png")))
+        self._add_button("blockly", "Blockly", resource_path(os.path.join("img", "blockly.png")))
 
 
     def _load_image(self, img_file):
@@ -512,9 +516,9 @@ class Toolbar(tk.Frame):
 
     def update_device_image(self, alert):
         if alert:
-            self.buttons["device"].config(image=self.images["img/device_alert.png"])
+            self.buttons["device"].config(image=self.images[resource_path(os.path.join("img", "device_alert.png"))])
         else:
-            self.buttons["device"].config(image=self.images["img/device.png"])
+            self.buttons["device"].config(image=self.images[resource_path(os.path.join("img", "device.png"))])
 
 
 class uSerial(serial.Serial):
