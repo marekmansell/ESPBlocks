@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-data_files = [("/home/marek/Desktop/blockly-master/img", "img")]
+data_files = [("img", "img")]
 
 a = Analysis(['editor.py'],
              pathex=['/home/marek/Desktop/blockly-master'],

@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
+
+
+
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QUrl
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QAction, QVBoxLayout, QApplication, QWidget, QMainWindow, QPushButton
-from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
+from PyQt5.QtWidgets import QAction, QVBoxLayout
+from PyQt5.QtWebKitWidgets import QWebPage, QWebView
+from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow,QPushButton
 import threading 
 
 
@@ -45,7 +49,7 @@ class EditorWindow(QMainWindow):
 
         self.show()
 
-class WebPage(QWebEnginePage):
+class WebPage(QWebPage):
     def __init__(self, webview, _event=None):
         super().__init__()
         self.webview = webview
@@ -68,7 +72,7 @@ class BlocklyThread(threading.Thread):
 
         layout = QVBoxLayout()
 
-        browser = QWebEngineView(editor_window)
+        browser = QWebView(editor_window)
         layout.addWidget(browser)
         browser.resize(x_size-50, y_size)
         page = WebPage(browser, self.event)
