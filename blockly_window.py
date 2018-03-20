@@ -8,9 +8,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QUrl
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QAction, QVBoxLayout
-from PyQt5.QtWebKitWidgets import QWebPage, QWebView
+from PyQt5.QtWebEngineWidgets import QWebEnginePage, QWebEngineView
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow,QPushButton
-import threading 
+import threading
+import os
 
 
 def get_code(webview):
@@ -49,7 +50,7 @@ class EditorWindow(QMainWindow):
 
         self.show()
 
-class WebPage(QWebPage):
+class WebPage(QWebEnginePage):
     def __init__(self, webview, _event=None):
         super().__init__()
         self.webview = webview
@@ -67,12 +68,13 @@ class BlocklyThread(threading.Thread):
 
     def run(self):
         url = 'http://marekmansell.sk/test/blockly/'
+        url = 'file://' + os.path.abspath(os.path.join('blockly','index.html'))
         app = QApplication([])
         editor_window = EditorWindow()
 
         layout = QVBoxLayout()
 
-        browser = QWebView(editor_window)
+        browser = QWebEngineView(editor_window)
         layout.addWidget(browser)
         browser.resize(x_size-50, y_size)
         page = WebPage(browser, self.event)
