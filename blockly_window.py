@@ -41,7 +41,7 @@ class EditorWindow(QMainWindow):
 
 
         self.setMinimumSize(x_size-50, y_size)
-        self.setWindowTitle('MicroPython Blockly')
+        self.setWindowTitle('ESPBlocks')
 
         self.btn = QPushButton("Run", self)
         self.btn.resize(50, 50)

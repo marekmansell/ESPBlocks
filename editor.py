@@ -633,7 +633,7 @@ class StatusBar(tk.Frame):
 class Application(tk.Frame):
     def __init__(self, root):
         super().__init__(root)
-        self.title = "MicroPython Editor"
+        self.title = "ESPBlocks"
         self.root = root
 
         root.minsize(500, 500) # main window can not be smaller than 500x500 px
